@@ -9,7 +9,6 @@ ensta==5.2.9
 idna==3.7
 imageio==2.34.1
 imageio-ffmpeg==0.4.9
-lxml==5.2.1
 moviepy==1.0.3
 ntplib==0.4.0
 numpy==1.26.4
