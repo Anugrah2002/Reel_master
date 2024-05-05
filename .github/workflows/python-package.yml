@@ -19,6 +19,7 @@ jobs:
         
     - name: Install dependencies
       run: |
+        sudo apt update -y
         sudo apt-get -y install build-dep python3-lxml
         pip install -r requirements.txt  # If you have any dependencies
         
