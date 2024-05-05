@@ -1,0 +1,25 @@
+name: Upload Reel
+
+on:
+  workflow_dispatch:  # Manually trigger workflow
+
+jobs:
+  run_python_script:
+    name: Run Python Script
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.10  # Choose your Python version
+        
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt  # If you have any dependencies
+        
+    - name: Run Reel master
+      run: python testensta.py  # Replace with your Python script path
